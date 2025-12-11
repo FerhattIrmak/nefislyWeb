@@ -311,6 +311,18 @@ body {
 .badge-icon {
     font-size: 1.2rem;
     animation: bounce 2s ease-in-out infinite;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.badge-icon::before {
+    content: '★';
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .badge-text {
@@ -666,7 +678,7 @@ body {
 .story-image {
     width: 100%;
     height: 240px;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     transform: none;
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -675,7 +687,9 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     margin-top: 0.5rem;
     will-change: auto;
-    contain: strict;
+    display: block;
+    background-size: cover;
+    background-position: center;
 }
 
 .story-card-wrapper:hover .story-image {
@@ -1892,6 +1906,8 @@ body {
 
     .badge-icon {
         font-size: 1.2rem;
+        width: 1.5em;
+        height: 1.5em;
     }
 
     .hero-stats {
@@ -1946,6 +1962,8 @@ body {
         height: 280px;
         transform: scale(0.9);
         border-radius: 15px;
+        object-fit: cover;
+        display: block;
     }
 
     .story-card-wrapper:hover .story-image {
@@ -2202,6 +2220,8 @@ body {
 
     .badge-icon {
         font-size: 1rem;
+        width: 1.3em;
+        height: 1.3em;
     }
 
     .hero-title {
@@ -2298,9 +2318,11 @@ body {
     .story-image {
         height: auto;
         max-height: 280px;
-        object-fit: contain;
+        object-fit: cover;
         transform: none;
         border-radius: 12px;
+        display: block;
+        width: 100%;
     }
 
     /* Feature Cards */
@@ -2593,7 +2615,9 @@ body {
     .story-image {
         height: auto;
         max-height: 240px;
-        object-fit: contain;
+        object-fit: cover;
+        display: block;
+        width: 100%;
     }
 
     .feature-img {
