@@ -674,6 +674,8 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     margin-top: 0.5rem;
+    will-change: auto;
+    contain: strict;
 }
 
 .story-card-wrapper:hover .story-image {
@@ -793,6 +795,8 @@ body {
     transition: var(--transition);
     flex-shrink: 0;
     background: #f9f9f9;
+    will-change: auto;
+    contain: strict;
 }
 
 .feature-card:hover .feature-img {
